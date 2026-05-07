@@ -1,0 +1,11 @@
+issue_number,title,column,assignee,labels,last_status_update,is_stale,stale_rule,recommended_update
+1,Configure CDN edge caching for marketing pages,In Progress,alex-eng,"backend,launch-blocker",2026-04-15,yes,a,Ping assignee
+2,Pricing page copy — final legal review,In Review,legal-team,"docs,needs-update",2026-04-19,yes,a+b,Add status comment
+3,Migrate analytics from Mixpanel to Amplitude,Blocked,data-team,"data,stale",2026-04-25,yes,c,Move to In Progress
+4,Press kit assets for launch,In Progress,marketing-jess,"marketing,needs-update",2026-04-12,yes,a,Reassign
+5,Load test payment service to 5x peak traffic,In Review,qa-priya,"performance,qa",2026-04-23,yes,d,Move to Done & close
+6,Update launch landing page hero image,In Progress,design-mira,"design,launch-blocker",2026-05-05,no,,
+7,Write release notes for v2.0,In Review,docs-noah,docs,2026-05-06,no,,
+8,Send launch announcement to beta list,Ready,marketing-jess,marketing,2026-05-06,no,out-of-scope-column,
+9,Plan post-launch monitoring schedule,Backlog,,backend,2026-04-02,no,out-of-scope-column,
+10,Configure feature flags for rollout,Done,alex-eng,backend,2026-04-10,no,out-of-scope-column,
