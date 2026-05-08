@@ -1,0 +1,20 @@
+{
+  "name": "artifacts-dependency-triage-eval",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Fixture repo for evaluating GitHub dependency update triage",
+  "scripts": {
+    "test:smoke": "node -e \"const axios=require('axios'); const chunk=require('lodash/chunk'); const React=require('react'); if (typeof axios.get !== 'function') throw new Error('axios failed to load'); if (chunk([1,2,3,4],2).length !== 2) throw new Error('lodash failed to load'); if (typeof React.createElement !== 'function') throw new Error('react failed to load'); console.log('Dependency smoke test passed');\"",
+    "test:tooling": "node -e \"const version=require('eslint/package.json').version; console.log('ESLint version:', version);\"",
+    "test:react-compat": "node -e \"const major=Number(require('react/package.json').version.split('.')[0]); if (major >= 19) { console.error('React 19 requires manual review in this evaluation repo'); process.exit(1); } console.log('React compatibility check passed');\"",
+    "test": "npm run test:smoke && npm run test:tooling && npm run test:react-compat"
+  },
+  "dependencies": {
+    "axios": "1.7.4",
+    "lodash": "4.17.20",
+    "react": "18.3.1"
+  },
+  "devDependencies": {
+    "eslint": "8.57.0"
+  }
+}
